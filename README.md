@@ -18,18 +18,18 @@ rest-api 방식을 이용하여 클라이언트와 서버간의 통신을 하였
 - 저가 쓴 코드들은 모두 저가 이해한 상태에서 쓰는 것이며, 왜 이렇게 작성하였냐고 묻는다면, 대답할 수 있습니다.
 - Server측에서 저가 작성한 부분
 	- /laravel/routes
-		- [/laravel/routes/api.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_A/laravel/routes/api.php)
-		- [/laravel/routes/web.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_A/laravel/routes/web.php)
+		- [api.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_Aapi.php)
+		- [web.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_A/laravel/routes/web.php)
 	- /laravel/app
-		- [/laravel/app/users.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_A/laravel/app/users.php)
-		- [/laravel/app/histories.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_A/laravel/app/histories.php)
-		- [/laravel/app/places.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_A/laravel/app/places.php)
-		- [/laravel/app/schedules.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_A/laravel/app/schedules.php)
+		- [users.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_Ausers.php)
+		- [histories.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_Ahistories.php)
+		- [places.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_Aplaces.php)
+		- [schedules.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_A/laravel/app/schedules.php)
 	- /laravel/app/Http/Controllers
-		- [/laravel/app/Http/Controllers/placesController.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_A/laravel/app/Http/Controllers/placesController.php)
-		- [/laravel/app/Http/Controllers/routeController.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_A/laravel/app/Http/Controllers/routeController.php)
-		- [/laravel/app/Http/Controllers/schedulesController.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_A/laravel/app/Http/Controllers/schedulesController.php)
-		- [/laravel/app/Http/Controllers/usersController.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_A/laravel/app/Http/Controllers/usersController.php)
+		- [placesController.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_AplacesController.php)
+		- [routeController.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_ArouteController.php)
+		- [schedulesController.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_AschedulesController.php)
+		- [usersController.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_A/laravel/app/Http/Controllers/usersController.php)
 	- [/laravel/database/migrations/2018_11_09_004712_table_init.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_A/laravel/database/migrations/2018_11_09_004712_table_init.php)
 	- [/laravel/app/Http/Kernel.php](https://github.com/jong-hui/find-way-project/blob/master/jonghui_Server2_A/laravel/app/Http/Kernel.php)
 	- [...](https://github.com/jong-hui/find-way-project/tree/master/jonghui_Server2_A/laravel)
