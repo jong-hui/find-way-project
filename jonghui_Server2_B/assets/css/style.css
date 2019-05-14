@@ -1,0 +1,272 @@
+/* Preset */
+*  {
+    font-family: 'Segoe UI', 'Arial', 'sans-serif';
+    outline: none;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    opacity: .7;
+}
+body {
+    margin: 0 auto; 
+}
+
+/* Layout */
+.wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 1440px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    border: 1px solid #ddd;
+}
+
+/* Panel */
+.panel-content {
+    padding: 20px;
+}
+.panel-list {
+    border-top: 2px solid #efefef;
+}
+
+/* Form */
+.form-group {
+    display: block;
+}
+.form-group:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+/* Result */
+.result-list {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.result-list > li {
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    cursor: pointer;
+    padding: 20px;
+}
+.result-list > li:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+.result-list > li:hover {
+    background: #efefef;
+}
+.result-detail {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.result-detail li {
+    display: flex;
+    align-items: center;
+}
+.result-detail li:not(:last-child) {
+    margin-bottom: 10px;
+}
+.result-detail label {
+    font-weight: 500;
+    width: 100px;
+    font-size: .8em;
+}
+.result-detail p {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    font-size: .9em;
+}
+
+/* Side */
+.side {
+    background: white;
+    width: 360px;
+    position: relative;
+    height: 100%;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.item {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+/** General **/
+/* Nav */
+.nav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.nav a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+}
+.nav li {
+    flex: 1;
+    list-style: none;
+}
+.nav li:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+/* Heading */
+.heading {
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #233f8b;
+}
+/* Inputs and Button */
+.input {
+    border: none;
+    background: #efefef;
+    border-radius: 4px;
+    padding: 10px;
+    color: gray;
+}
+.form-group .input {
+    display: block;
+    width: 100%;
+}
+.btn {
+    background: #233f8b;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: capitalize;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    padding: 3px 10px;
+    padding-bottom: 5px;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.btn:active {
+    background: #152b55;
+}
+.form-content-right {
+    text-align: right;
+}
+/* Map */
+.map {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+}
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+.modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1243123;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal_content {
+    width: 500px;
+    height: 170px;
+    background: white;
+    padding: 30px;
+}
+svg {
+    position: relative;
+    max-width: 100%;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+.fade-enter-active, .fade-leave-active {
+    opacity: 0.5;
+}
+.auto {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+}
+.auto li {
+    width: 100%;
+    list-style: none;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 0.8em;
+    background: #ededed;
+}
+.auto li:hover {
+    background: #233f8b;
+    color: #ffffff;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Transition Animations */
+.fade-enter-active,
+.fade-leave-active,
+.slide-enter-active,
+.slide-leave-active {
+    transition: all .4s;
+}
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+    transform: translateY(15px);
+}
+.slide-enter,
+.slide-leave-to {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+.floating {
+    position: absolute;
+    width: 300px; background: white; padding: 14px;
+}
+.floating img {
+    max-width: 100%;
+}
+
+.line {
+    stroke-width: 5;
+}
+.BUS {
+    stroke-dasharray: 5 5 5;
+}
+
+@media (max-width: 780px)  {
+    .container {
+        flex-direction: column;
+    }
+}
